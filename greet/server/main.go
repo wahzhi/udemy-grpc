@@ -3,14 +3,14 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/wahzhi/grpc-go-course/greet/proto"
+//	pb "github.com/wahzhi/udemy-grpc/greet/proto"
 	"google.golang.org/grpc"
 )
 
 var addr string = "0.0.0.0:50051"
 
 type Server struct{
-	pb.FactorServiceServer  //interface 
+//	pb.FactorServiceServer  //interface 
 }
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 	s := grpc.NewServer()
 
 	// register this server to grpc
-	pb.RegisterFactorServiceServer(s, &Server{})
+//	pb.RegisterFactorServiceServer(s, &Server{})
 
 	if err = s.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve: %v\n", err)

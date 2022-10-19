@@ -5,7 +5,7 @@ import (
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	pb "github.com/wahzhi/grpc-go-course/greet/proto"
+//	pb "github.com/wahzhi/udemy-grpc/greet/proto"
 )
 
 var addr string = "localhost:50051"
@@ -20,8 +20,8 @@ func main(){
 	}
 	defer conn.Close()
 
-	c := pb.NewFactorServiceClient(conn)
+//	c := pb.NewFactorServiceClient(conn)
 	//doGreet(c)
-	doFactor(c)
+	//doFactor(c)
 
 }

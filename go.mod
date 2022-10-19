@@ -1,4 +1,4 @@
-module github.com/wahzhi/grpc-go-course
+module github.com/wahzhi/udemy-grpc
 
 go 1.16
 

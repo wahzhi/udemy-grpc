@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "github.com/wahzhi/udemy-grpc/calculator/proto";
+
+import "avg.proto";
+
+service CalculatorService {
+   
+    rpc Avg(stream AvgRequest) returns (AvgResponse);
+}
